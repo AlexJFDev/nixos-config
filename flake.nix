@@ -13,10 +13,8 @@
         # Manual Configuration
         ./system-configuration/networking.nix
         ./system-configuration/user.nix
-        ./system-configuration/audio.nix
         ./system-configuration/desktop.nix
         ./system-configuration/misc-configuration.nix
-        ./system-configuration/universal-packages.nix
         # Packages
         ./packages/universal-packages.nix
       ];
