@@ -36,6 +36,11 @@
         vscjava.vscode-java-dependency
         vscjava.vscode-gradle
         # oracle.oracle-java # Installed manually
+
+        # Vue.js Extensions
+        vue.volar
+        dbaeumer.vscode-eslint
+        esbenp.prettier-vscode
       ];
     })
     (python3.withPackages (ps: with ps; [ numpy pandas requests matplotlib sympy ]))
@@ -53,5 +58,12 @@
     autoconf
     automake
     libtool
+
+    #NodeJS
+    nodejs_18
+    yarn
+
+    # Google Cloud
+    google-cloud-sdk
   ];
 }
