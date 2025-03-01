@@ -36,6 +36,13 @@
     pulse.enable = true;
   };
 
+  # Enable Redis
+  services.redis = {
+    enable = true;
+    bind = "127.0.0.1";  # Restrict to local access (change if needed)
+    port = 6379;
+  };
+
   # Install firefox.
   programs.firefox.enable = true;
 
@@ -59,5 +66,4 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.11"; # Did you read the comment?
-
 }

@@ -63,7 +63,8 @@
     nodejs_18
     yarn
 
-    # Google Cloud
+    # Miscellaneous
     google-cloud-sdk
+    redis
   ];
 }
