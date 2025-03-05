@@ -5,6 +5,10 @@
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {
+    overlays = [
+      (import ./packages/my-packages.nix)
+    ];
+
     nixosConfigurations.alexjf = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [

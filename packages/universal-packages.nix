@@ -66,5 +66,6 @@
     # Miscellaneous
     google-cloud-sdk
     redis
+    hello
   ];
 }
