@@ -60,7 +60,7 @@
     libtool
 
     #NodeJS
-    fnm
+    node18_12
     yarn
 
     # Miscellaneous
