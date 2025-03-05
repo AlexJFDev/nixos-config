@@ -17,6 +17,8 @@
         ./system-configuration/misc-configuration.nix
         # Packages
         ./packages/universal-packages.nix
+        # Environment Variables
+        ./system-configuration/environment-variables.nix
       ];
     };
   };
