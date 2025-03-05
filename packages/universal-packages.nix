@@ -60,7 +60,7 @@
     libtool
 
     #NodeJS
-    nodejs_18
+    nodenv
     yarn
 
     # Miscellaneous
