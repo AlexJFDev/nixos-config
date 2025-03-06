@@ -1,7 +1,9 @@
 {
   stdenv,
   fetchzip,
-  python39
+  autoPatchelfHook,
+  glibc,
+  zlib
 }:
 
 stdenv.mkDerivation {
@@ -9,9 +11,19 @@ stdenv.mkDerivation {
   version = "18.12.1";
 
   src = fetchzip {
-    url = "https://nodejs.org/download/release/v18.12.1/node-v18.12.1.tar.gz";
-    sha256 = "rM6fYwScEhim69j2wU/0cGGiM2YiHpzD30eo2DS36+c=";
+    url = "https://nodejs.org/dist/v18.12.1/node-v18.12.1-linux-x64.tar.gz";
+    sha256 = "93OPw1o/7wpe2ii+9KG0w0DJ9ZTJa1yzzitgxixZfg8=";
   };
 
-  buildInputs = [ python39 ];
+  nativeBuildInputs = [ autoPatchelfHook ];
+  buildInputs = [ glibc zlib ];
+
+  phases = [ "installPhase" ];
+
+  installPhase = ''
+    echo $src
+    echo $out
+    mkdir $out
+    cp -r $src/* $out
+  '';
 }
