@@ -37,11 +37,11 @@
   };
 
   # Enable Redis
-  services.redis = {
-    enable = true;
-    bind = "127.0.0.1";  # Restrict to local access (change if needed)
-    port = 6379;
-  };
+  # services.redis = {
+  #   enable = true;
+  #   bind = "127.0.0.1";  # Restrict to local access (change if needed)
+  #   port = 6379;
+  # };
 
   # Install firefox.
   programs.firefox.enable = true;
