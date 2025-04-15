@@ -1,4 +1,7 @@
 
+# TO RUN
+# sudo nixos-rebuild switch --flake ./ --impure
+
 { pkgs, ... }:
 
 let
@@ -10,9 +13,9 @@ in
   environment.systemPackages = with pkgs; [
     google-chrome
     #eclipses.eclipse-sdk
-    eclipses.eclipse-cpp
-    eclipses.eclipse-java
-    zulu23 # Java
+    #eclipses.eclipse-cpp
+    #eclipses.eclipse-java
+    #zulu23 # Java
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [
         # Nix Language
