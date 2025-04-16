@@ -1,3 +1,6 @@
+# TO RUN
+# cd ~/nixos-config
+# sudo nixos-rebuild switch --flake ./ --impure
 {
   description = "My first NixOS Flake!";
   inputs = {
