@@ -8,7 +8,7 @@ in
 {
   environment.systemPackages = with pkgs; [
     google-chrome
-    eclipses.eclipse-sdk
+    #eclipses.eclipse-sdk
     #eclipses.eclipse-cpp
     #eclipses.eclipse-java
     #zulu23 # Java
